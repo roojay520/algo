@@ -1,7 +1,11 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
-  extends: ['airbnb-base', 'plugin:@typescript-eslint/recommended'],
+  extends: [
+    'airbnb-base',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+  ],
   parserOptions: {
     project: './tsconfig.json',
     ecmaVersion: 2017,
@@ -17,5 +21,13 @@ module.exports = {
     es6: true,
   },
   root: true,
-  rules: { '@typescript-eslint/rule-name': 'error' },
+  rules: {
+    indent: 'off',
+    'no-console': 'off',
+    'import/no-unresolved': 'off',
+    'no-unused-expressions': 'off',
+    '@typescript-eslint/no-console': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/indent': ['error', 2],
+  },
 };
