@@ -1,0 +1,48 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "数据结构与算法学习记录",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint src --ext .ts",
+    "commit": "git-cz"
+  },
+  "files": [
+    "/src",
+    "/types"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roojay520/algo.git"
+  },
+  "author": "roojay520<roojay520@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roojay520/algo/issues"
+  },
+  "homepage": "https://github.com/roojay520/algo#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "commitizen": "^3.1.1",
+    "commitlint-config-cz": "^0.11.1",
+    "cz-customizable": "^6.2.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "husky": "^2.3.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}

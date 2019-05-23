@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "es2015", "es2016", "es2017", "es2018"],
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "declarationMap": false,
+    "sourceMap": false,
+    "outDir": "./dist",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [ "src/**/*" ]
+}
