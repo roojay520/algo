@@ -5,11 +5,11 @@
   "main": "index.js",
   "types": "types/index.d.ts",
   "scripts": {
+    "test": "mocha",
+    "test:nyc": "nyc mocha",
     "build": "tsc -p tsconfig.json",
     "lint": "eslint src --ext .ts",
-    "commit": "git-cz",
-    "test": "mocha",
-    "test:nyc": "nyc mocha"
+    "commit": "git-cz"
   },
   "files": [
     "/src"
