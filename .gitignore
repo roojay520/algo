@@ -71,3 +71,5 @@ typings/
 *.sln
 *.sw*
 .nyc_output/
+
+dist/

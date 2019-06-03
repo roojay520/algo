@@ -9,7 +9,8 @@
     "test:nyc": "nyc mocha",
     "build": "tsc -p tsconfig.json",
     "lint": "eslint src --ext .ts",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "postversion": "git push --follow-tags"
   },
   "files": [
     "/src"
